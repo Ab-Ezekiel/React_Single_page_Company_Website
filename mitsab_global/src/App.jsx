@@ -1,43 +1,31 @@
-import React, { lazy, Suspense } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import './App.css'
+import Navbar from "./components/Navbar"
+import Header from "./components/Header"
+import About from "./components/About"
+import Services from "./components/Services"
+import Teams from "./components/Teams"
+import Project from "./components/Project"
+import Testimonies from "./components/Testimonies"
+import Blog from "./components/Blog"
+import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 
 
-const Navbar = lazy(() => import("./components/Navbar"));
-const Header = lazy(() => import("./pages/Header"));
-const About = lazy(() => import("./pages/About"));
-const Services = lazy(() => import("./pages/Services"));
-const Teams = lazy(() => import("./pages/About/Teams"));
-const Project = lazy(() => import("./pages/Project"));
-const Contact = lazy(() => import("./pages/Contact"));
-const Footer = lazy(() => import("./components/Footer"));
-const ServiceDetail = lazy(() => import("./pages/Services/ServiceDetail"));
-
-
-const App = () => {
+function App() {
   return (
-    <Router>
-      <div className="app-container">
-        <Suspense fallback={<div className="loading-spinner">Loading...</div>}>
-          <Navbar />
-          <div className="content-container">
-            <Routes>
-              <Route path="/" element={<Header />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/services/:id" element={<ServiceDetail />} />
-              <Route path="/teams" element={<Teams />} />
-              <Route path="/project" element={<Project />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="*" element={<div>404 - Page Not Found</div>} />
-            </Routes>
-          </div>
-          <Footer />
-        </Suspense>
-      </div>
-    </Router>
-  );
-};
+    <>
+      <Navbar/>
+      <Header/>
+      <About/>
+      <Services/>
+      <Teams/>
+      <Project/>
+      <Testimonies/>
+      <Blog/>
+      <Contact/>
+      <Footer/>
 
-export default App;
+    </>
+  )
+}
 
+export default App

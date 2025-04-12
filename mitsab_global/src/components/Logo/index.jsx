@@ -1,16 +1,15 @@
 import React from 'react'
 import "./Logo.css"
-import { logo } from "../../assets"
-import { Link } from 'react-router-dom'
+import { PiBuildingsFill } from 'react-icons/pi'
 
 
 const Logo = () => {
   return (
     <div className='logo'>
-        <Link to="/" className="icon_container">
-          <img src={logo} alt="" />
-        </Link>
-        <h1 className='title'>Mitsab Resources <span className='g-text'>Global Limited</span></h1>
+        <div className="icon_container">
+            <PiBuildingsFill/>
+        </div>
+        <h1 className='name'>Mitsab <span>Resort</span></h1>
     </div>
   )
 }

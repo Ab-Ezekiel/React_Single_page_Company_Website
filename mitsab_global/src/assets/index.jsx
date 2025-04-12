@@ -22,12 +22,3 @@ export {default as building_10} from "./building-10.jpeg";
 export {default as blog_1} from "./blog-1.jpeg";
 export {default as blog_2} from "./blog-2.jpeg";
 export {default as blog_3} from "./blog-3.jpeg";
-export {default as home_image1} from "./mitsab-work3.jpeg";
-export {default as welder_Work} from "./my-images2.jpeg";
-export {default as logo} from "./logo.jpeg";
-export {default as home_image2} from "./mitsab-work.png";
-export {default as home_image3} from "./pixel1.jpg";
-export {default as home_image4} from "./pixel2.jpg";
-export {default as home_image5} from "./pixel5.jpg";
-export {default as home_image6} from "./pixel4.jpg";
-

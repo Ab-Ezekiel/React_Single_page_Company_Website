@@ -1,13 +1,7 @@
+#footer{
+   
+    background: var(--color-success);
 
-  #footer{
-    position: relative;
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    margin-top: 4rem;
-    box-sizing: border-box;
-    background: rgb(6, 20, 43);
-    z-index: 200;
 }
 #footer .row {
     display: grid;
@@ -121,7 +115,7 @@
 }
 
 #footer .copyright {
-    background: rgb(11, 24, 51);
+    background: var(--color-success);
     margin-top: 0rem;
     margin-bottom: -6rem;
     border-radius: var(--radius-3);
